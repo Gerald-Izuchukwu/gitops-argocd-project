@@ -99,8 +99,6 @@ kubectl scale deployment gitops-demo --replicas=1 -n gitops-demo
 - **Reconciliation:** Because automated sync (with self-heal) was enabled, Argo CD reverted the manual change and scaled the Deployment back to match Git.
 - **Final state:** `replicas: 3` — Git's declared state won, demonstrating that Kubernetes is not the source of truth; Git is.
 
-*(Fill in with your actual observed timestamps/screenshots once you run the experiment.)*
-
 ## 8. Application Update
 
 The application was updated from:
