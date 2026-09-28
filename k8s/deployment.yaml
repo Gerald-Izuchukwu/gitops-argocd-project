@@ -16,7 +16,7 @@ spec:
         app: gitops-demo
     spec:
       containers:
-        - name: gitops-demo
-          image: <YOUR_DOCKERHUB_USERNAME>/gitops-demo:1.0
-          ports:
-            - containerPort: 5000
+      - name: gitops-demo
+        image: gerald22/gitops-demo:1.0
+        ports:
+        - containerPort: 5000
